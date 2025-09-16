@@ -1,19 +1,17 @@
 <script lang="ts" setup>
-import { onMounted, reactive, ref } from "vue";
-import Progress from './Progress.vue';
-import Question from './Question.vue';
-import Button from "./Button.vue";
-import Result from "./Result.vue";
+import { onMounted, reactive, ref } from "vue"
+import Progress from './Progress.vue'
+import Question from './Question.vue'
+import Button from "./Button.vue"
+import Result from "./Result.vue"
 
-let currentPage = ref(0);
-let score = ref(0);
+let currentPage = ref(0)
+let score = ref(0)
 
 function nextPage() {
-    if(currentPage.value >= 4) return;
-    currentPage.value++;
+    if(currentPage.value >= 4) return
+    currentPage.value++
 }
-
-
 </script>
 
 <template>
